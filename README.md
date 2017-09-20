@@ -36,14 +36,14 @@ Next step:
 
 Finanlly **restart terminal** to update the change 
 
-### 2. YouCompleteMe (x64)
+### YouCompleteMe x64
 - Install development tools and CMake
 	sudo apt-get install build-essential cmake
 
 - Make sure you have Python headers installed:
 	sudo apt-get install python-dev python3-dev
 
-### 3. YouCompleteMe (x32) - Ubuntu 12.04
+### YouCompleteMe x32
 - Require CMake version >= 2.8.11
 	sudo add-apt-repository ppa:kalakris/cmake
 	sudo apt-get update
