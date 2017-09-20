@@ -38,27 +38,35 @@ Finanlly **restart terminal** to update the change
 
 ### YouCompleteMe x64
 - Install development tools and CMake
+
 	sudo apt-get install build-essential cmake
 
 - Make sure you have Python headers installed:
+
 	sudo apt-get install python-dev python3-dev
 
 ### YouCompleteMe x32
 - Require CMake version >= 2.8.11
+
 	sudo add-apt-repository ppa:kalakris/cmake
+	
 	sudo apt-get update
+	
 	sudo apt-get install cmake
 
 - Require gcc 4.8 and g++ 4.8
 •Add the ppa
+
 	sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 
 •Then install gcc 4.8 and g++ 4.8:
+
 	sudo apt-get update
 
 	sudo apt-get install gcc-4.8 g++-4.8
 
 •Once installed, run following commands one by one to use gcc 4.8 instead of previous version.
+
 	sudo update-alternatives --remove-all gcc
 
 	sudo update-alternatives --remove-all g++
