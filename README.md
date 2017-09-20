@@ -1,33 +1,49 @@
-1. Install Font for Powerline
+Setup VIM on Ubuntu 
+===================
+- [Intro](#intro)
+- [Installation](#installation)
+	- [Font for Powerline](#font-powerline)
+	- [YouCompleteMe x64](#YouCompleteMe-x64)
+	- [YouCompleteMe x32](#YouCompleteMe-x32)
+
+Intro
+-----
+Installation
+-----
+
+### Font for Powerline
+
 Powerline use a special font to display arrow and another symbol. We need to download 
 the font and configuration font by using wget:
 
-# wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-# wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+	wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+	
+	wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf 
 
-After download, we need to move font into font folder in our machine: /usr/share/fonts
-or /usr/local/share/fonts, we can check that folder by command: xset -q
+After download, we need to move font into font folder in our machine: **/usr/share/fonts**
+or **/usr/local/share/fonts**, we can check that folder by command: **xset -q**
 
-$ sudo mv PowerlineSymbols.otf /usr/share/fonts/
+	sudo mv PowerlineSymbols.otf /usr/share/fonts/
 
 Next, we need to update cache
-# fc-cache -vf /usr/share/fonts/
+
+	fc-cache -vf /usr/share/fonts/
 
 Next step:
-# mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+
+	mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 
 
-Finanlly restart terminal to update the change 
+Finanlly **restart terminal** to update the change 
 
-
-2. YouCompleteMe (x64)
+### 2. YouCompleteMe (x64)
 - Install development tools and CMake
 	sudo apt-get install build-essential cmake
 
 - Make sure you have Python headers installed:
 	sudo apt-get install python-dev python3-dev
 
-3. YouCompleteMe (x32) - Ubuntu 12.04
+### 3. YouCompleteMe (x32) - Ubuntu 12.04
 - Require CMake version >= 2.8.11
 	sudo add-apt-repository ppa:kalakris/cmake
 	sudo apt-get update
